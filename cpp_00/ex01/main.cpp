@@ -6,7 +6,7 @@
 /*   By: jmiranda <jmiranda@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/16 23:27:24 by jmiranda          #+#    #+#             */
-/*   Updated: 2024/03/17 04:14:52 by jmiranda         ###   ########.fr       */
+/*   Updated: 2024/03/17 04:26:22 by jmiranda         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -80,6 +80,7 @@ int	main(void) {
 
 	while (1)
 	{
+		std::cout << std::endl << "\033[1;32m*-------------- Phone Book Menu--------------*\033[0m";
 		std::cout << std::endl << "Enter a command: " << std::endl;
 		std::getline(std::cin, input);
 		if (input == "ADD")
