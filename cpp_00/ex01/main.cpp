@@ -6,11 +6,18 @@
 /*   By: jmiranda <jmiranda@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/16 23:27:24 by jmiranda          #+#    #+#             */
-/*   Updated: 2024/03/17 03:45:31 by jmiranda         ###   ########.fr       */
+/*   Updated: 2024/03/17 04:05:46 by jmiranda         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "PhoneBook.hpp"
+
+void	searchContact(Contact *contact, int nb) {
+	std::string	input;
+
+	if (i < 0)
+		return ;
+}
 
 int	isDigit(std::string input) {
 	int	check;
@@ -53,26 +60,19 @@ std::string	getInput(std::string prompt) {
 	}
 }
 
-void	searchContact(Contact *contact, int i) {
-	std::string	input;
-
-	if (i < 0)
-		return ;
-}
-
 void	addContact(Contact *contact, int nb) {
 	std::string	input;
 
 	input = getInput("Enter first name:");
-	//contact[nb].setFirstName(input);
+	contact[nb].setFirstName(input);
 	input = getInput("Enter last name:");
-	//contact[nb].setLastName(input);
+	contact[nb].setLastName(input);
 	input = getInput("Enter nickname:");
-	//contact[nb].setNickName(input);
+	contact[nb].setNickname(input);
 	input = getInput("Enter phone number:");
-	//contact[nb].setPhoneNum(input);
+	contact[nb].setPhoneNum(input);
 	input = getInput("Enter darkest secret:");
-	//contact[nb].setSecret(input);
+	contact[nb].setSecret(input);
 }
 
 int	main(void) {
@@ -95,15 +95,13 @@ int	main(void) {
 		}
 		else if (input == "SEARCH")
 		{
-			if (i >= 0 && i <= 8)
+			if (i <= 8)
 				searchContact(pb.contact, i);
 			else
 				searchContact(pb.contact, 8);
 		}
 		else if (input == "EXIT")
-		{
 			break ;
-		}
 		else
 			std::cout << "\033[1;31mInvalid command: Try [ADD, SEARCH or EXIT]\033[0m" << std::endl;
 	}
