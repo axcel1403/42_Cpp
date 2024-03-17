@@ -6,7 +6,7 @@
 /*   By: jmiranda <jmiranda@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/16 23:27:24 by jmiranda          #+#    #+#             */
-/*   Updated: 2024/03/17 04:05:46 by jmiranda         ###   ########.fr       */
+/*   Updated: 2024/03/17 04:14:52 by jmiranda         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,9 +14,6 @@
 
 void	searchContact(Contact *contact, int nb) {
 	std::string	input;
-
-	if (i < 0)
-		return ;
 }
 
 int	isDigit(std::string input) {
