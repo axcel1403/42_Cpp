@@ -6,13 +6,13 @@
 #    By: jmiranda <jmiranda@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/02/29 00:21:39 by jmiranda          #+#    #+#              #
-#    Updated: 2024/03/16 23:09:23 by jmiranda         ###   ########.fr        #
+#    Updated: 2024/03/17 04:15:58 by jmiranda         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 NAME	= PhoneBook
 
-SRCS	= main.cpp Contact.cpp PhoneBook.cpp \
+SRCS	= main.cpp Contact.cpp \
 
 OBJS	= ${SRCS:.cpp=.o}
 
