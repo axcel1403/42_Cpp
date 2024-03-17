@@ -6,7 +6,7 @@
 #    By: jmiranda <jmiranda@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/02/29 00:21:39 by jmiranda          #+#    #+#              #
-#    Updated: 2024/02/29 00:25:31 by jmiranda         ###   ########.fr        #
+#    Updated: 2024/03/16 23:09:23 by jmiranda         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -16,7 +16,7 @@ SRCS	= main.cpp Contact.cpp PhoneBook.cpp \
 
 OBJS	= ${SRCS:.cpp=.o}
 
-CC		= g++
+CC		= c++
 
 CFLAGS	= -Wall -Wextra -Werror -std=c++98
 
